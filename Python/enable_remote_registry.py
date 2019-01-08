@@ -1,3 +1,5 @@
+#enabling registry on a remote pc
+
 import winreg
 import wmi
 
