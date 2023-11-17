@@ -2,31 +2,23 @@
 
 import random
 
-
-winning_combination = []
+lucky_combination = []
 
 def lottery():
-   
-    number = 0
-    list_of_balls = list(range(1,45))
-    
+        i = 0
+        list_of_numbers = list(range(1,40))
 
-        
-    while number < 7:
-            ball = random.choice(list_of_balls)
-            winning_combination.append(ball)
-            list_of_balls.remove(ball)
-            
-    
-            number+=1
-    else:
-        return list_of_balls
-       
-          
-            
-               
-    
-list_of_balls = lottery()    
+        while i < 7:
+                withdrawn_number = random.choice(list_of_numbers)
+                lucky_combination.append(withdrawn_number)
+                list_of_numbers.remove(withdrawn_number)
+                i += 1
+                print(withdrawn_number)
+                print(list_of_numbers)
+                print(lucky_combination)
+        else:
+                return lucky_combination
 
+lottery()
 
-print("The lucky combination is",winning_combination)
+print("The lucky combination is", lucky_combination)

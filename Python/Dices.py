@@ -1,4 +1,4 @@
-#Throw 5 dices until all of dices show same value. Print the result and number of tries.
+# Throw 5 dices until all of dices show same value. Print the result and number of tries.
 
 
 import random
